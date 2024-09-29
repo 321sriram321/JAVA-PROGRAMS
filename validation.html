@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+
+    <title>text-feild validations</title>
+    <style>
+
+    </style>
+    <script>
+        function fun1(){
+            let Username=document.getElementById("id1").value
+            let Password=document.getElementById("id2").value
+            let msg='hey! dataa is okay'
+            alert(msg) 
+            /*if(Username==" "){
+                 alert("username shouldn't be empty");
+            }
+            if(Password==" "){
+                 alert("password shouldn't be empty");
+            }
+            else{
+                alert('data is okay');
+            }*/
+
+        }
+        function fun2(){
+            let result=confirm("sure! you want to clear?")
+            if(result){
+                return true
+            }
+            else{
+                return false
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <form name="n1" action="Serverpage1" method="get" onsubmit="return fun1()" onreset="return fun2()">
+        <table assign="center">
+            <tr>
+                <td>
+                    <label for="id1">Username :</label>
+                </td>
+                <td>
+                    <input type="text" id="id1" placeholder="Enter your username">
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label for="id2">Password :</label>
+                </td>
+                <td>
+                    <input type="password" id="id2" name="n1" placeholder="Enter your password">
+
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="t1" value="submit">
+                <td>
+                    <input type="button" id="t1" name="n2" value="clear">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+    
+</body>
+</html>

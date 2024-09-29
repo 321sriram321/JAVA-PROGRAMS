@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <script>
+        function fun(){
+        let c= document.getElementById('t1').value
+         document.getElementById('s1').innerHTML=c
+        }
+        </script>
+</head>
+<body>
+
+            enter your name:  <input  type="text" placeholder="enter your name" id="t1" onkeypress="fun()"> <br><br>
+        
+                your name is : <span id="s1" onkeypress="fun()"></span>
+
+</body>
+</html>

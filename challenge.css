@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #c0c0c7;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: #bbb5b5;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px black;
+    margin-top: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #100f0f;
+}
+
+table {
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #aea3a3;
+    border: 6px #000;
+}
+
+thead {
+    background-color: #191818;
+}
+
+th {
+    cursor: pointer;
+    background-color: #e2e6ea;
+    color: #333;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+th:hover {
+    background-color: #0da71f;
+}
+
+th, td {
+    padding: 15px;
+    border: 2px solid #141313;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+tbody tr:hover {
+    background-color: #cce7ff;
+    color: #000;
+    cursor: pointer;
+}
+
+.filter-options {
+    margin: 10px 2px;
+    padding: 13px;
+    background-color: yellow;
+    border-radius: 5px;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.sub {
+    font-size: 23px;
+    color: #312626;
+}
+
+.subjects {
+    text-align: center;
+}
+
+#subject {
+    text-align: justify;
+    padding: 2px;
+    font-size: 19px;
+}
+
+input[type="number"] {
+    margin-right: 10px;
+    padding: 5px;
+    width: 140px;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #0ae335;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: hsl(12, 94%, 50%);
+}
+
+button#clearBtn {
+    background-color: rgb(41, 204, 222);
+}
+
+button#clearBtn:hover {
+    background-color: orange;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+#pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#pagination button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}

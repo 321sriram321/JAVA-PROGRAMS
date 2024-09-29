@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="t1" value="100">
+    <input type="text" id="t2" value="200">
+    <!-- <button onclick="doSum()">+</button>  or we can take this by using input tag -->
+     <input onclick="doSum()" type="button" value="+">
+      <!--   creating a button and when we click tht button sum operation will be done and stored in t3 -->
+    <input type="text" id="t3">
+     <script>
+        function doSum(){
+       let x= document.getElementById('t1').value //getting value of t1
+       let y= document.getElementById('t2').value //getting value of t2
+       let sum=eval(x)+eval(y) //adding t1 and t2 using eval because if we directly add thme using + operator then it will be like concating
+       document.getElementById('t3').value=sum//setting value to t3
+        }
+</script>
+    
+</body>
+</html>

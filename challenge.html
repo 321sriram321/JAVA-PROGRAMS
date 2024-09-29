@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Scores Filter</title>
+    <link rel="stylesheet" href="challenge.css">
+</head>
+<body>
+    <div class="container">
+        <header><h1>Student Scores</h1></header>
+        <hr>
+
+        <div class="subjects">
+            <label for="subject" class="sub">Select Subject:</label>
+            <select id="subject">
+                <option value="English">English</option>
+                <option value="Maths">Maths</option>
+                <option value="Science">Science</option>
+                <option value="SocialScience">Social Science</option>
+            </select>
+        </div>
+
+        <div class="filter-options">
+            <input type="radio" id="above" name="filter" value="above">
+            <label for="above">Above</label>
+
+            <input type="radio" id="below" name="filter" value="below">
+            <label for="below">Below</label>
+
+            <input type="radio" id="between" name="filter" value="between">
+            <label for="between">Between</label>
+
+            <input type="number" id="filterValue1" placeholder="Value 1">
+            <input type="number" id="filterValue2" placeholder="Value 2" style="display: none;">
+        </div>
+
+        <div class="buttons">
+            <button id="filterBtn">Filter</button>
+            <button id="clearBtn">Clear</button>
+        </div>
+
+        <table id="studentTable" border="4px">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">S.No</th>
+                    <th onclick="sortTable(1)">Name</th>
+                    <th onclick="sortTable(2)">English</th>
+                    <th onclick="sortTable(3)">Maths</th>
+                    <th onclick="sortTable(4)">Science</th>
+                    <th onclick="sortTable(5)">Social Science</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        <div id="pagination"></div>
+    </div>
+
+    <script src="challenge.js"></script>
+</body>
+</html>
+
